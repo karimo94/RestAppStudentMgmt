@@ -33,7 +33,7 @@ namespace RestAppStudentMgmt.Controllers
         }
 
         // POST: api/Student
-        public async void PostAsync([FromBody]Student student)
+        public async void Post([FromBody]Student student)
         {
             //update a student record
             using (StudentMgmtEntities entities = new StudentMgmtEntities())
