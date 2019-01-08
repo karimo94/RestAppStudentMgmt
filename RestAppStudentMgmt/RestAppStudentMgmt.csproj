@@ -49,6 +49,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -324,6 +325,13 @@
       <Project>{3fd189ab-8dcf-4fb5-afd9-c00283e7efbf}</Project>
       <Name>StudentDataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\UserDataAccess\UserDataAccess.csproj">
+      <Project>{9c678aed-428a-4d76-8e75-164604666811}</Project>
+      <Name>UserDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

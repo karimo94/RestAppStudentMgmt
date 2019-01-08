@@ -4,32 +4,57 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using UserDataAccess;
 
 namespace RestAppStudentMgmt.Controllers
 {
     //[Authorize]
     public class UsersController : ApiController
     {
-        // GET api/Users
-        public IEnumerable<string> Get()
+        // GET api/User
+        [HttpGet]
+        public IEnumerable<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            using (UserEntities entities = new UserEntities())
+            {
+                return entities.Users.ToList();
+            }
         }
 
         // GET api/User/id
-        public string Get(int id)
+        [HttpGet]
+        public User Get(int id)
         {
-            return "value";
+            using (UserEntities entities = new UserEntities())
+            {
+                return (User) entities.Users.ToList()[entities.Users.ToList().FindIndex(user => user.id==id)];
+            }
         }
 
         // PUT api/Users/User
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public async void Put([FromBody]User nUser)
         {
+            using (UserEntities entities = new UserEntities())
+            {
+                string sqlQueryInsert = "INSERT INTO User VALUES ('" + nUser.id + "','" + nUser.pass + ");";
+
+                await entities.Database.ExecuteSqlCommandAsync(sqlQueryInsert);
+
+                await entities.SaveChangesAsync();
+            }
         }
 
         // DELETE api/User/id
-        public void Delete(int id)
+        [HttpDelete]
+        public async void Delete(int id)
         {
+            using (UserEntities entities = new UserEntities())
+            {
+                string sqlQueryDel = "DELETE FROM User WHERE id=" + id + ";";
+                await entities.Database.ExecuteSqlCommandAsync(sqlQueryDel);
+                await entities.SaveChangesAsync();
+            }
         }
     }
 }

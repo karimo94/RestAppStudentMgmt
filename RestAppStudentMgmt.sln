@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAppStudentMgmt", "RestA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentDataAccess", "StudentDataAccess\StudentDataAccess.csproj", "{3FD189AB-8DCF-4FB5-AFD9-C00283E7EFBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDataAccess", "UserDataAccess\UserDataAccess.csproj", "{9C678AED-428A-4D76-8E75-164604666811}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3FD189AB-8DCF-4FB5-AFD9-C00283E7EFBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD189AB-8DCF-4FB5-AFD9-C00283E7EFBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FD189AB-8DCF-4FB5-AFD9-C00283E7EFBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C678AED-428A-4D76-8E75-164604666811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C678AED-428A-4D76-8E75-164604666811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C678AED-428A-4D76-8E75-164604666811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C678AED-428A-4D76-8E75-164604666811}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

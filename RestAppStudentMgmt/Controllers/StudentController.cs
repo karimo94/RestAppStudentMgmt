@@ -11,6 +11,7 @@ namespace RestAppStudentMgmt.Controllers
     public class StudentController : ApiController
     {
         // GET: api/Student
+        [HttpGet]
         public IEnumerable<Student> Get()
         {
             //retrive all students
@@ -21,6 +22,7 @@ namespace RestAppStudentMgmt.Controllers
         }
 
         // GET: api/Student/id
+        [HttpGet]
         public Student Get(int id)
         {
             //get a student by id
@@ -33,6 +35,7 @@ namespace RestAppStudentMgmt.Controllers
         }
 
         // POST: api/Student
+        [HttpPost]
         public async void Post([FromBody]Student student)
         {
             //update a student record
@@ -50,6 +53,7 @@ namespace RestAppStudentMgmt.Controllers
         }
 
         // PUT: api/Student/
+        [HttpPut]
         public async void Put([FromBody]Student student)
         {
             //create a new student record
@@ -65,6 +69,7 @@ namespace RestAppStudentMgmt.Controllers
         }
 
         // DELETE: api/Student/id
+        [HttpDelete]
         public async void Delete(int id)
         {
             //delete a student record (row)
