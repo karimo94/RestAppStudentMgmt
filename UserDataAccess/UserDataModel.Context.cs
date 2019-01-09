@@ -16,7 +16,7 @@ namespace UserDataAccess
     public partial class UserEntities : DbContext
     {
         public UserEntities()
-            : base("name=Entities")
+            : base("name=UserEntities")
         {
         }
     

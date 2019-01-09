@@ -326,7 +326,7 @@
       <Name>StudentDataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserDataAccess\UserDataAccess.csproj">
-      <Project>{9c678aed-428a-4d76-8e75-164604666811}</Project>
+      <Project>{508006dc-c443-4d19-9a8a-20801133c6d9}</Project>
       <Name>UserDataAccess</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C678AED-428A-4D76-8E75-164604666811}</ProjectGuid>
+    <ProjectGuid>{508006DC-C443-4D19-9A8A-20801133C6D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UserDataAccess</RootNamespace>
@@ -77,7 +77,7 @@
     </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.Config" />
     <None Include="packages.config" />
     <None Include="UserDataModel.edmx.diagram">
       <DependentUpon>UserDataModel.edmx</DependentUpon>
